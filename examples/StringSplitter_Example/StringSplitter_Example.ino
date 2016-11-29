@@ -1,6 +1,6 @@
 /*
  StringSplitter example: Basic
- 
+
  This example shows how to split a delimited string to substrings (items) by using the StringSplitter library.
  The output is visible in the Serial Monitor.
 
@@ -15,13 +15,13 @@ void setup() {
 
   String strTest = "123,456,789,abc";
   Serial.println("Test String: " + strTest);
-  
-  StringSplitter *split = new StringSplitter(strTest, ',', 3);  // new StringSplitter(string_to_split, delimiter, limit)
-  int itemCount = split->getItemCount();
+
+  StringSplitter *splitter = new StringSplitter(strTest, ',', 3);  // new StringSplitter(string_to_split, delimiter, limit)
+  int itemCount = splitter->getItemCount();
   Serial.println("Item count: " + String(itemCount));
 
   for(int i = 0; i < itemCount; i++){
-    String item = split->getItemAtIndex(i);
+    String item = splitter->getItemAtIndex(i);
     Serial.println("Item @ index " + String(i) + ": " + String(item));
   }
 
