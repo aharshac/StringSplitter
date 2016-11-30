@@ -4,7 +4,7 @@
  This example shows how to split a delimited string to substrings (items) by using the StringSplitter library.
  The output is visible in the Serial Monitor.
 
- For more details see: https://github.com/aharshac/ArduinoStringSplitter
+ For more details see: https://github.com/aharshac/StringSplitter
 */
 
 #include "StringSplitter.h"
